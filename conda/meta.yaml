@@ -1,0 +1,24 @@
+package:
+    name: pyg-oms
+    version: 0.0.1
+
+source:
+    path: ../src
+	
+build:
+    include_recipe: False
+    number: 0
+    noarch: python
+
+requirements:
+    build:
+        - pyg-mongo         >=0.0.7
+        - pyg-base          >=0.0.7
+        
+    run:
+        - pyg-mongo         >=0.0.7
+        - pyg-base          >=0.0.7
+
+about:
+    home: https://github.com/gityoav/pyg-oms
+    license: GNU
